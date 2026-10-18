@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Solicita un presupuesto a Barrett Tecnología.">
+
+  <title>Presupuestos | Barrett Tecnología</title>
+
+  <link rel="stylesheet" href="css/barrett.css">
+</head>
+
+<body>
+
+  <!-- CABECERA -->
+  <header class="cabecera">
+    <a href="index.html" class="marca">
+      <img src="img/logo-drago1.png"
+           alt="Logotipo Barrett Tecnología">
+      <span>BARRETT TECNOLOGÍA</span>
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Servicios</a></li>
+        <li>
+          <a href="presupuesto.html"
+             class="activo"
+             aria-current="page">
+            Presupuestos
+          </a>
+        </li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina-presupuesto">
+
+    <section class="presupuesto-contenedor">
+
+      <!-- PANEL IZQUIERDO -->
+      <div class="presupuesto-presentacion">
+
+        <span class="presupuesto-etiqueta">
+          BARRETT FUTURE SERVICES
+        </span>
+
+        <h1>
+          HAGAMOS REALIDAD
+          <span>TU PROYECTO</span>
+        </h1>
+
+        <p>
+          ¿Tienes una idea? Cuéntanos qué necesitas.
+          En BARRETT TECNOLOGÍA diseñamos soluciones
+          creativas y tecnológicas a tu medida.
+        </p>
+
+        <img src="img/sello.barrett.png"
+             alt="Sistema DRAGO-IA"
+             class="presupuesto-drago">
+
+        <div class="presupuesto-beneficios">
+          <p>✦ Diseño personalizado</p>
+          <p>✦ Soluciones tecnológicas</p>
+          <p>✦ Atención a tu proyecto</p>
+        </div>
+
+      </div>
+
+      <!-- PANEL DERECHO: FORMULARIO -->
+      <div class="presupuesto-panel">
+
+        <div class="presupuesto-encabezado">
+          <span>CONTACTO · BARRETT TECNOLOGÍA</span>
+
+          <h2>Solicita tu presupuesto</h2>
+
+          <p>
+            Completa el formulario y cuéntanos
+            cómo podemos ayudarte.
+          </p>
+        </div>
+
+        <form
+          class="formulario-presupuesto"
+          action="https://formsubmit.co/drago.ia.1622@gmail.com"
+          method="POST">
+
+          <!-- CONFIGURACIÓN DEL CORREO -->
+          <input type="hidden"
+                 name="_subject"
+                 value="Nuevo presupuesto - Barrett Tecnología">
+
+          <input type="hidden"
+                 name="_captcha"
+                 value="true">
+
+          <!-- CAMPOS -->
+          <div class="formulario-grid">
+
+            <div class="campo-formulario">
+              <label for="nombre">
+                Nombre completo *
+              </label>
+
+              <input type="text"
+                     id="nombre"
+                     name="nombre"
+                     placeholder="Tu nombre completo"
+                     autocomplete="name"
+                     required>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="email">
+                Correo electrónico *
+              </label>
+
+              <input type="email"
+                     id="email"
+                     name="email"
+                     placeholder="correo@ejemplo.com"
+                     autocomplete="email"
+                     required>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="telefono">
+                Teléfono *
+              </label>
+
+              <input type="tel"
+                     id="telefono"
+                     name="telefono"
+                     placeholder="Tu número de teléfono"
+                     autocomplete="tel"
+                     minlength="9"
+                     maxlength="20"
+                     required>
+            </div>
+
+            <div class="campo-formulario">
+              <label for="servicio">
+                Servicio solicitado *
+              </label>
+
+              <select id="servicio"
+                      name="servicio"
+                      required>
+
+                <option value="">
+                  Selecciona un servicio
+                </option>
+
+                <option value="Diseno web">
+                  Diseño de páginas web
+                </option>
+
+                <option value="Diseno de apps">
+                  Diseño de aplicaciones
+                </option>
+
+                <option value="Proyectos">
+                  Hacemos realidad tus proyectos
+                </option>
+
+                <option value="Reparacion">
+                  Reparación y configuración
+                </option>
+
+                <option value="Diseno grafico">
+                  Diseño gráfico
+                </option>
+
+                <option value="Digital Signage">
+                  Diseño de Digital Signage
+                </option>
+
+              </select>
+            </div>
+
+            <div class="campo-formulario campo-completo">
+              <label for="mensaje">
+                Describe tu proyecto *
+              </label>
+
+              <textarea id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Explícanos qué necesitas, tus ideas y los detalles de tu proyecto..."
+                        required></textarea>
+            </div>
+
+          </div>
+
+          <!-- PRIVACIDAD -->
+          <div class="privacidad-presupuesto">
+            <input type="checkbox"
+                   id="privacidad"
+                   name="privacidad"
+                   value="Aceptada"
+                   required>
+
+            <label for="privacidad">
+              He leído y acepto la
+              <a href="politica-privacidad.html">
+                política de privacidad
+              </a>.
+            </label>
+          </div>
+
+          <!-- ENVÍO -->
+          <button type="submit"
+                  class="boton-enviar-presupuesto">
+            Enviar solicitud de presupuesto →
+          </button>
+
+          <p class="nota-presupuesto">
+            * Todos los campos marcados son obligatorios.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <h2>BARRETT TECNOLOGÍA</h2>
+
+    <p>
+      Innovación · Diseño · Tecnología · DRAGO-IA
+    </p>
+
+    <p>
+      <a href="mailto:drago.ia.1622@gmail.com">
+        drago.ia.1622@gmail.com
+      </a>
+    </p>
+
+    <p>
+      Paseo de la Castellana, 200 ·
+      28046 Madrid, España
+    </p>
+
+    <p>
+      © 2026 Barrett Tecnología
+    </p>
+
+    <p class="firma">
+      Diseñado por Barrett Tecnología Sistema DRAGO-IA
+    </p>
+  </footer>
+
+</body>
+</html>
