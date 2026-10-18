@@ -1,123 +1,363 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
+
   <meta name="description"
-        content="Catálogo de productos y servicios Barrett Tecnología">
+        content="Catálogo tecnológico de Barrett Tecnología:
+        ordenadores, smartphones, componentes,
+        accesorios, ciberseguridad y Sistema DRAGO-IA.">
+
   <title>Productos | Barrett Tecnología</title>
+
   <link rel="stylesheet" href="css/barrett.css">
 </head>
+
 <body>
 
-<header class="cabecera">
-  <a href="index.html" class="marca">
-    <img src="img/sello.barrett.png"
-         alt="Sello Barrett Tecnología">
-    <span>BARRETT TECNOLOGÍA</span>
-  </a>
+  <!-- =====================================
+       CABECERA CORPORATIVA
+       ===================================== -->
+  <header class="cabecera">
 
-  <nav aria-label="Navegación principal">
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html" class="activo"
-             aria-current="page">Productos</a></li>
-      <li><a href="presupuesto.html">Presupuestos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+    <a href="index.html" class="marca">
+      <img src="img/sello.barrett.png"
+           alt="Sello de Barrett Tecnología">
 
-<main>
-  <section class="titulo-pagina">
-    <h1>CATÁLOGO TECNOLÓGICO</h1>
-    <p>Innovación y tecnología para cada necesidad.</p>
-  </section>
+      <span>BARRETT TECNOLOGÍA</span>
+    </a>
 
-  <section class="seccion">
-    <h2>Nuestros productos y soluciones</h2>
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
 
-    <div class="cuadricula">
-      <article class="tarjeta producto">
-        <img src="img/ordenadores.png"
-             alt="Ordenador de alto rendimiento">
-        <h3>Ordenadores</h3>
-        <p>Equipos para trabajo, gaming y diseño.</p>
-        <a class="boton" href="presupuesto.html">
-          Solicitar presupuesto
-        </a>
-      </article>
+        <li>
+          <a href="productos.html"
+             class="activo"
+             aria-current="page">
+            Productos
+          </a>
+        </li>
 
-      <article class="tarjeta producto">
-        <img src="img/tecnologia.png"
-             alt="Teléfono inteligente">
-        <h3>Smartphones</h3>
-        <p>Dispositivos móviles y tecnología avanzada.</p>
-        <a class="boton" href="presupuesto.html">
-          Solicitar presupuesto
-        </a>
-      </article>
+        <li>
+          <a href="presupuesto.html">
+            Presupuestos
+          </a>
+        </li>
 
-      <article class="tarjeta producto">
-        <img src="img/componentes.png"
-             alt="Componentes de ordenador">
-        <h3>Componentes</h3>
-        <p>Memorias, procesadores y almacenamiento.</p>
-        <a class="boton" href="presupuesto.html">
-          Solicitar presupuesto
-        </a>
-      </article>
+        <li>
+          <a href="contacto.html">
+            Contacto
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-      <article class="tarjeta producto">
-        <img src="img/perifericos.png"
-             alt="Accesorios tecnológicos">
-        <h3>Accesorios</h3>
-        <p>Teclados, ratones y periféricos.</p>
-        <a class="boton" href="presupuesto.html">
-          Solicitar presupuesto
-        </a>
-      </article>
+  </header>
 
-      <article class="tarjeta producto">
-        <img src="img/logo-drago.png"
-             alt="Concepto de seguridad informática">
-        <h3>Ciberseguridad</h3>
-        <p>Servicios de protección y seguridad digital.</p>
-        <a class="boton" href="presupuesto.html">
-          Solicitar presupuesto
-        </a>
-      </article>
+  <!-- =====================================
+       CONTENIDO PRINCIPAL
+       ===================================== -->
+  <main>
 
-      <article class="tarjeta producto">
-        <img src="img/DRAGO-IA.png"
-             alt="Identidad del sistema DRAGO-IA">
-        <h3>Sistema DRAGO-IA</h3>
-        <p>Soluciones basadas en inteligencia artificial.</p>
-        <a class="boton" href="presupuesto.html">
-          Solicitar presupuesto
-        </a>
-      </article>
+    <!-- PORTADA -->
+    <section class="titulo-pagina servicios-portada">
+
+      <span class="etiqueta-future">
+        BARRETT FUTURE TECHNOLOGY
+      </span>
+
+      <h1>CATÁLOGO TECNOLÓGICO</h1>
+
+      <p>
+        Descubre soluciones tecnológicas,
+        innovación y equipos para tus proyectos.
+      </p>
+
+      <a href="#catalogo" class="boton">
+        Explorar catálogo ↓
+      </a>
+
+    </section>
+
+    <!-- =====================================
+         GALERÍA DE PRODUCTOS
+         ===================================== -->
+    <section class="seccion" id="catalogo">
+
+      <h2>NUESTROS PRODUCTOS Y SOLUCIONES</h2>
+
+      <p>
+        Tecnología, rendimiento y soluciones
+        adaptadas a diferentes necesidades.
+      </p>
+
+      <div class="cuadricula servicios-grid">
+
+        <!-- PRODUCTO 01: ORDENADORES -->
+        <article class="tarjeta producto">
+
+          <div class="servicio-imagen">
+            <img src="img/ordenadores.png"
+                 alt="Ordenadores de alto rendimiento"
+                 loading="lazy">
+
+            <span class="servicio-numero">01</span>
+          </div>
+
+          <h3>Ordenadores</h3>
+
+          <p>
+            Equipos informáticos para trabajo,
+            gaming, diseño y productividad.
+          </p>
+
+          <a href="presupuesto.html" class="boton">
+            Solicitar presupuesto →
+          </a>
+
+        </article>
+
+        <!-- PRODUCTO 02: SMARTPHONES -->
+        <article class="tarjeta producto">
+
+          <div class="servicio-imagen">
+            <img src="img/tecnologia.png"
+                 alt="Smartphones y dispositivos móviles"
+                 loading="lazy">
+
+            <span class="servicio-numero">02</span>
+          </div>
+
+          <h3>Smartphones</h3>
+
+          <p>
+            Dispositivos móviles y soluciones
+            tecnológicas para la comunicación
+            y el uso diario.
+          </p>
+
+          <a href="presupuesto.html" class="boton">
+            Solicitar presupuesto →
+          </a>
+
+        </article>
+
+        <!-- PRODUCTO 03: COMPONENTES -->
+        <article class="tarjeta producto">
+
+          <div class="servicio-imagen">
+            <img src="img/componentes.png"
+                 alt="Procesadores, memorias y almacenamiento"
+                 loading="lazy">
+
+            <span class="servicio-numero">03</span>
+          </div>
+
+          <h3>Componentes</h3>
+
+          <p>
+            Procesadores, memorias RAM,
+            unidades de almacenamiento
+            y componentes para ordenadores.
+          </p>
+
+          <a href="presupuesto.html" class="boton">
+            Solicitar presupuesto →
+          </a>
+
+        </article>
+
+        <!-- PRODUCTO 04: ACCESORIOS -->
+        <article class="tarjeta producto">
+
+          <div class="servicio-imagen">
+            <img src="img/perifericos.png"
+                 alt="Teclados, ratones y periféricos"
+                 loading="lazy">
+
+            <span class="servicio-numero">04</span>
+          </div>
+
+          <h3>Accesorios y periféricos</h3>
+
+          <p>
+            Teclados, ratones y accesorios
+            para completar tu espacio
+            de trabajo o entretenimiento.
+          </p>
+
+          <a href="presupuesto.html" class="boton">
+            Solicitar presupuesto →
+          </a>
+
+        </article>
+
+        <!-- PRODUCTO 05: CIBERSEGURIDAD -->
+        <article class="tarjeta producto">
+
+          <div class="servicio-imagen">
+            <img src="img/logo-drago.png"
+                 alt="Identidad tecnológica asociada a ciberseguridad"
+                 loading="lazy">
+
+            <span class="servicio-numero">05</span>
+          </div>
+
+          <h3>Ciberseguridad</h3>
+
+          <p>
+            Soluciones orientadas a la protección
+            de equipos, información
+            y entornos digitales.
+          </p>
+
+          <a href="presupuesto.html" class="boton">
+            Consultar servicio →
+          </a>
+
+        </article>
+
+        <!-- PRODUCTO 06: SISTEMA DRAGO-IA -->
+        <article class="tarjeta producto">
+
+          <div class="servicio-imagen">
+            <img src="img/DRAGO-IA.png"
+                 alt="Identidad visual del Sistema DRAGO-IA"
+                 loading="lazy">
+
+            <span class="servicio-numero">06</span>
+          </div>
+
+          <h3>Sistema DRAGO-IA</h3>
+
+          <p>
+            Propuestas tecnológicas basadas
+            en inteligencia artificial,
+            automatización e innovación digital.
+          </p>
+
+          <a href="presupuesto.html" class="boton">
+            Consultar proyecto →
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- LLAMADA A LA ACCIÓN -->
+    <section class="seccion llamada-accion">
+
+      <h2>¿BUSCAS UNA SOLUCIÓN TECNOLÓGICA?</h2>
+
+      <p>
+        En BARRETT TECNOLOGÍA queremos ayudarte
+        a encontrar la tecnología adecuada
+        para tus necesidades y proyectos.
+      </p>
+
+      <a href="presupuesto.html" class="boton">
+        Solicita información →
+      </a>
+
+    </section>
+
+  </main>
+
+  <!-- =====================================
+       PIE DE PÁGINA CORPORATIVO
+       ===================================== -->
+  <footer>
+
+    <h2>BARRETT TECNOLOGÍA</h2>
+
+    <p>
+      Innovación · Diseño · Tecnología · DRAGO-IA
+    </p>
+
+    <!-- DATOS DE CONTACTO -->
+    <p>
+      Paseo de la Castellana, 200 ·
+      28046 Madrid, España
+    </p>
+
+    <p>
+      Teléfono:
+      <a href="tel:+34689345235">
+        +34 689 345 235
+      </a>
+    </p>
+
+    <p>
+      WhatsApp Business:
+      <a href="https://wa.me/34614550520"
+         target="_blank"
+         rel="noopener noreferrer">
+        +34 614 550 520
+      </a>
+    </p>
+
+    <p>
+      Correo electrónico:
+      <a href="mailto:drago.ia.1622@gmail.com">
+        drago.ia.1622@gmail.com
+      </a>
+    </p>
+
+    <!-- REDES SOCIALES -->
+    <div class="redes">
+
+      <a href="https://www.instagram.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Instagram
+      </a>
+
+      <a href="https://www.facebook.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Facebook
+      </a>
+
+      <a href="https://wa.me/34614550520"
+         target="_blank"
+         rel="noopener noreferrer">
+        WhatsApp
+      </a>
+
     </div>
-  </section>
-</main>
 
-<footer>
-  <h2>BARRETT TECNOLOGÍA</h2>
-  <p>Paseo de la Castellana, 200 · 28046 Madrid</p>
-  <p>+34 689 345 235</p>
-  <p>drago.ia.1622@gmail.com</p>
-  <div class="redes">
-    <a href="https://www.instagram.com/">Instagram</a>
-    <a href="https://www.facebook.com/">Facebook</a>
-    <a href="https://www.whatsapp.com/">WhatsApp</a>
-  </div>
-  <p>© 2026 Barrett Tecnología · Aviso legal</p>
-  <p class="firma">
-    Diseñado por Barrett Tecnología Sistema DRAGO-IA
-  </p>
-</footer>
+    <!-- ENLACES LEGALES -->
+    <p class="enlaces-legales">
+
+      <a href="aviso-legal.html">
+        Aviso legal
+      </a>
+
+      ·
+
+      <a href="politica-privacidad.html">
+        Política de privacidad
+      </a>
+
+    </p>
+
+    <p>© 2026 Barrett Tecnología</p>
+
+    <p class="firma">
+      Diseñado por Barrett Tecnología Sistema DRAGO-IA
+    </p>
+
+  </footer>
 
 </body>
 </html>

@@ -1,12 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
+
   <meta name="description"
-        content="Solicita un presupuesto a Barrett Tecnología.">
+        content="Solicita un presupuesto de diseño web,
+        aplicaciones, reparación informática, diseño gráfico
+        y Digital Signage en Barrett Tecnología.">
 
   <title>Presupuestos | Barrett Tecnología</title>
 
@@ -15,18 +20,26 @@
 
 <body>
 
-  <!-- CABECERA -->
+  <!-- CABECERA CORPORATIVA -->
   <header class="cabecera">
+
     <a href="index.html" class="marca">
       <img src="img/logo-drago1.png"
-           alt="Logotipo Barrett Tecnología">
+           alt="Logotipo Barrett Tecnología DRAGO-IA">
+
       <span>BARRETT TECNOLOGÍA</span>
     </a>
 
     <nav aria-label="Navegación principal">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Servicios</a></li>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+
+        <li>
+          <a href="productos.html">Servicios</a>
+        </li>
+
         <li>
           <a href="presupuesto.html"
              class="activo"
@@ -34,14 +47,20 @@
             Presupuestos
           </a>
         </li>
-        <li><a href="contacto.html">Contacto</a></li>
+
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
       </ul>
     </nav>
+
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="pagina-presupuesto">
 
-    <section class="presupuesto-contenedor">
+    <section class="presupuesto-contenedor"
+             aria-label="Solicitud de presupuesto">
 
       <!-- PANEL IZQUIERDO -->
       <div class="presupuesto-presentacion">
@@ -62,7 +81,7 @@
         </p>
 
         <img src="img/sello.barrett.png"
-             alt="Sistema DRAGO-IA"
+             alt="Sello corporativo de Barrett Tecnología"
              class="presupuesto-drago">
 
         <div class="presupuesto-beneficios">
@@ -73,11 +92,14 @@
 
       </div>
 
-      <!-- PANEL DERECHO: FORMULARIO -->
+      <!-- PANEL DERECHO -->
       <div class="presupuesto-panel">
 
         <div class="presupuesto-encabezado">
-          <span>CONTACTO · BARRETT TECNOLOGÍA</span>
+
+          <span>
+            CONTACTO · BARRETT TECNOLOGÍA
+          </span>
 
           <h2>Solicita tu presupuesto</h2>
 
@@ -85,8 +107,10 @@
             Completa el formulario y cuéntanos
             cómo podemos ayudarte.
           </p>
+
         </div>
 
+        <!-- FORMULARIO CONECTADO A FORMSUBMIT -->
         <form
           class="formulario-presupuesto"
           action="https://formsubmit.co/drago.ia.1622@gmail.com"
@@ -101,124 +125,161 @@
                  name="_captcha"
                  value="true">
 
-          <!-- CAMPOS -->
+          <input type="hidden"
+                 name="_template"
+                 value="table">
+
+          <!-- CAMPOS DEL FORMULARIO -->
           <div class="formulario-grid">
 
+            <!-- NOMBRE -->
             <div class="campo-formulario">
+
               <label for="nombre">
                 Nombre completo *
               </label>
 
-              <input type="text"
-                     id="nombre"
-                     name="nombre"
-                     placeholder="Tu nombre completo"
-                     autocomplete="name"
-                     required>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre completo"
+                autocomplete="name"
+                minlength="2"
+                maxlength="100"
+                required>
+
             </div>
 
+            <!-- CORREO -->
             <div class="campo-formulario">
+
               <label for="email">
                 Correo electrónico *
               </label>
 
-              <input type="email"
-                     id="email"
-                     name="email"
-                     placeholder="correo@ejemplo.com"
-                     autocomplete="email"
-                     required>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="correo@ejemplo.com"
+                autocomplete="email"
+                maxlength="150"
+                required>
+
             </div>
 
+            <!-- TELÉFONO -->
             <div class="campo-formulario">
+
               <label for="telefono">
                 Teléfono *
               </label>
 
-              <input type="tel"
-                     id="telefono"
-                     name="telefono"
-                     placeholder="Tu número de teléfono"
-                     autocomplete="tel"
-                     minlength="9"
-                     maxlength="20"
-                     required>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Ejemplo: 612345678"
+                autocomplete="tel"
+                pattern="[0-9+() .-]{9,20}"
+                title="Introduce un teléfono válido de 9 a 20 caracteres"
+                required>
+
             </div>
 
+            <!-- SERVICIO -->
             <div class="campo-formulario">
+
               <label for="servicio">
                 Servicio solicitado *
               </label>
 
-              <select id="servicio"
-                      name="servicio"
-                      required>
+              <select
+                id="servicio"
+                name="servicio"
+                required>
 
-                <option value="">
+                <option value="" disabled selected>
                   Selecciona un servicio
                 </option>
 
-                <option value="Diseno web">
+                <option value="Diseño de páginas web">
                   Diseño de páginas web
                 </option>
 
-                <option value="Diseno de apps">
+                <option value="Diseño de aplicaciones">
                   Diseño de aplicaciones
                 </option>
 
-                <option value="Proyectos">
+                <option value="Desarrollo de proyectos">
                   Hacemos realidad tus proyectos
                 </option>
 
-                <option value="Reparacion">
+                <option value="Reparación y configuración">
                   Reparación y configuración
                 </option>
 
-                <option value="Diseno grafico">
+                <option value="Diseño gráfico">
                   Diseño gráfico
                 </option>
 
-                <option value="Digital Signage">
+                <option value="Diseño de Digital Signage">
                   Diseño de Digital Signage
                 </option>
 
               </select>
+
             </div>
 
+            <!-- MENSAJE -->
             <div class="campo-formulario campo-completo">
+
               <label for="mensaje">
                 Describe tu proyecto *
               </label>
 
-              <textarea id="mensaje"
-                        name="mensaje"
-                        rows="6"
-                        placeholder="Explícanos qué necesitas, tus ideas y los detalles de tu proyecto..."
-                        required></textarea>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="6"
+                minlength="10"
+                maxlength="3000"
+                placeholder="Explícanos qué necesitas, tus ideas y los detalles de tu proyecto..."
+                required></textarea>
+
             </div>
 
           </div>
 
-          <!-- PRIVACIDAD -->
+          <!-- ACEPTACIÓN DE PRIVACIDAD -->
           <div class="privacidad-presupuesto">
-            <input type="checkbox"
-                   id="privacidad"
-                   name="privacidad"
-                   value="Aceptada"
-                   required>
+
+            <input
+              type="checkbox"
+              id="privacidad"
+              name="privacidad"
+              value="Aceptada"
+              required>
 
             <label for="privacidad">
               He leído y acepto la
-              <a href="politica-privacidad.html">
+              <a href="politica-privacidad.html"
+                 target="_blank"
+                 rel="noopener noreferrer">
                 política de privacidad
               </a>.
             </label>
+
           </div>
 
-          <!-- ENVÍO -->
-          <button type="submit"
-                  class="boton-enviar-presupuesto">
+          <!-- BOTÓN DE ENVÍO -->
+          <button
+            type="submit"
+            class="boton-enviar-presupuesto">
+
             Enviar solicitud de presupuesto →
+
           </button>
 
           <p class="nota-presupuesto">
@@ -233,18 +294,13 @@
 
   </main>
 
-  <!-- PIE DE PÁGINA -->
+  <!-- PIE DE PÁGINA CORPORATIVO -->
   <footer>
+
     <h2>BARRETT TECNOLOGÍA</h2>
 
     <p>
       Innovación · Diseño · Tecnología · DRAGO-IA
-    </p>
-
-    <p>
-      <a href="mailto:drago.ia.1622@gmail.com">
-        drago.ia.1622@gmail.com
-      </a>
     </p>
 
     <p>
@@ -253,12 +309,68 @@
     </p>
 
     <p>
-      © 2026 Barrett Tecnología
+      Teléfono:
+      <a href="tel:+34689345235">
+        +34 689 345 235
+      </a>
     </p>
+
+    <p>
+      WhatsApp Business:
+      <a href="https://wa.me/34614550520"
+         target="_blank"
+         rel="noopener noreferrer">
+        +34 614 550 520
+      </a>
+    </p>
+
+    <p>
+      Correo:
+      <a href="mailto:drago.ia.1622@gmail.com">
+        drago.ia.1622@gmail.com
+      </a>
+    </p>
+
+    <!-- REDES SOCIALES -->
+    <div class="redes">
+
+      <a href="https://www.instagram.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Instagram
+      </a>
+
+      <a href="https://www.facebook.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Facebook
+      </a>
+
+      <a href="https://www.whatsapp.com/"
+         target="_blank"
+         rel="noopener noreferrer">
+        WhatsApp
+      </a>
+
+    </div>
+
+    <!-- ENLACES LEGALES -->
+    <p class="enlaces-legales">
+      <a href="aviso-legal.html">
+        Aviso legal
+      </a>
+      ·
+      <a href="politica-privacidad.html">
+        Política de privacidad
+      </a>
+    </p>
+
+    <p>© 2026 Barrett Tecnología</p>
 
     <p class="firma">
       Diseñado por Barrett Tecnología Sistema DRAGO-IA
     </p>
+
   </footer>
 
 </body>
