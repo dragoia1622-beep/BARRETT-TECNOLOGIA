@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de privacidad | Barrett Tecnología</title>
+    <link rel="stylesheet" href="../css/barrett.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="productos.html">Servicios</a>
+            <a href="presupuesto.html">Presupuestos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="seccion">
+        <h1>Política de privacidad</h1>
+
+        <p>Esta página informa sobre el tratamiento de
+        los datos facilitados a través del formulario
+        de solicitud de presupuesto.</p>
+
+        <h2>Datos solicitados</h2>
+        <p>El formulario puede solicitar nombre,
+        correo electrónico, teléfono, servicio de interés
+        y descripción de la consulta.</p>
+
+        <h2>Finalidad</h2>
+        <p>Los datos se solicitan para atender consultas
+        y preparar presupuestos.</p>
+
+        <h2>Envío del formulario</h2>
+        <p>El formulario utiliza un servicio externo
+        de envío de mensajes. Su funcionamiento y
+        configuración deben verificarse antes de
+        utilizarlo con datos reales.</p>
+
+        <h2>Contacto</h2>
+        <p>Para consultas relacionadas con la privacidad:
+            <a href="mailto:drago.ia.1622@gmail.com">
+                drago.ia.1622@gmail.com
+            </a>
+        </p>
+
+        <p><a href="../index.html">Volver al inicio</a></p>
+    </main>
+
+    <footer>
+        <p>© 2026 Barrett Tecnología</p>
+        <p><a href="aviso-legal.html">Aviso legal</a></p>
+    </footer>
+</body>
+</html>

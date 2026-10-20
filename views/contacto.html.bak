@@ -1,4 +1,4 @@
-
+﻿
 <!DOCTYPE html>
 <html lang="es">
 
@@ -15,7 +15,7 @@
 
   <title>Contacto | Barrett Tecnología</title>
 
-  <link rel="stylesheet" href="css/barrett.css">
+  <link rel="stylesheet" href="../css/barrett.css">
 </head>
 
 <body>
@@ -23,9 +23,9 @@
   <!-- CABECERA CORPORATIVA -->
   <header class="cabecera">
 
-    <a href="index.html" class="marca">
-      <img src="img/sello.barrett.png"
-           alt="Sello de Barrett Tecnología">
+    <a href="../index.html" class="marca">
+      <img src="../assets/images/sello.barrett.png"
+           alt="Sello de Barrett Tecnología" width="1254" height="1254">
 
       <span>BARRETT TECNOLOGÍA</span>
     </a>
@@ -34,7 +34,7 @@
       <ul>
 
         <li>
-          <a href="index.html">Inicio</a>
+          <a href="../index.html">Inicio</a>
         </li>
 
         <li>
@@ -377,3 +377,5 @@
 
 </body>
 </html>
+
+

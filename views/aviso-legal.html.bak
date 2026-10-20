@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso legal | Barrett Tecnología</title>
+    <link rel="stylesheet" href="../css/barrett.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegación principal">
+            <a href="../index.html">Inicio</a>
+            <a href="productos.html">Servicios</a>
+            <a href="presupuesto.html">Presupuestos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="seccion">
+        <h1>Aviso legal</h1>
+
+        <p>Este sitio web presenta los servicios de Barrett Tecnología,
+        Sistema DRAGO-IA.</p>
+
+        <h2>Información de contacto</h2>
+        <p>Ubicación: Alcorcón, Madrid, España.</p>
+        <p>Correo electrónico:
+            <a href="mailto:drago.ia.1622@gmail.com">
+                drago.ia.1622@gmail.com
+            </a>
+        </p>
+
+        <h2>Contenido del sitio web</h2>
+        <p>Los contenidos tienen carácter informativo.
+        Las condiciones de cada servicio se concretarán
+        mediante el correspondiente presupuesto.</p>
+
+        <h2>Propiedad intelectual</h2>
+        <p>Los textos, diseños e imágenes están sujetos
+        a los derechos que correspondan a sus respectivos titulares.</p>
+
+        <p><a href="../index.html">Volver al inicio</a></p>
+    </main>
+
+    <footer>
+        <p>© 2026 Barrett Tecnología</p>
+        <p>
+            <a href="politica-privacidad.html">Política de privacidad</a>
+        </p>
+    </footer>
+</body>
+</html>
