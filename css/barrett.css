@@ -1148,3 +1148,28 @@ select:focus-visible {
 
 
 
+
+/* Animación del mundo: Trabajamos sin fronteras */
+
+.mundo-giratorio {
+  display: inline-block;
+  transform-origin: center;
+  animation: girar-mundo 6s linear infinite;
+}
+
+@keyframes girar-mundo {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+/* Respeta las preferencias de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .mundo-giratorio {
+    animation: none;
+  }
+}
