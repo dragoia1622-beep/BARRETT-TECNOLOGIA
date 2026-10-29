@@ -1173,3 +1173,50 @@ select:focus-visible {
     animation: none;
   }
 }
+
+
+
+
+
+
+/* ==========================================
+   BARRETT TECNOLOGÍA
+   Marca corporativa en la página de Inicio
+========================================== */
+
+.cabecera .marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.cabecera .marca-nombre {
+  display: inline-flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+}
+
+.cabecera .marca-barrett {
+  color: #27376e;
+}
+
+.cabecera .marca-tecnologia {
+  color: #d62565;
+}
+
+@media (max-width: 768px) {
+  .cabecera .marca {
+    gap: 9px;
+  }
+
+  .cabecera .marca-nombre {
+    font-size: 1rem;
+  }
+}
