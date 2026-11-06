@@ -1220,3 +1220,93 @@ select:focus-visible {
     font-size: 1rem;
   }
 }
+
+/* ==========================================
+   DRAGO-IA · PLANETA TIERRA 3D
+========================================== */
+
+/* Ocultar únicamente la imagen antigua del sello */
+.drago-esfera-contenedor .drago-esfera {
+  display: none;
+}
+
+/* Mostrar la Tierra en el mismo lugar */
+#drago-tierra-3d {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Canvas de Three.js */
+#drago-tierra-3d canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   BARRETT TECNOLOGÍA · VOLVER ARRIBA
+========================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.barrett-volver-arriba {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+  margin: 20px auto;
+
+  border: 1px solid #d4af37;
+  border-radius: 50%;
+
+  background: #061326;
+  color: #d4af37;
+
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: background 0.3s ease,
+              color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.barrett-volver-arriba:hover {
+  background: #d4af37;
+  color: #061326;
+  transform: translateY(-4px);
+}
+
+.barrett-volver-arriba:focus-visible {
+  outline: 2px solid #d4af37;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

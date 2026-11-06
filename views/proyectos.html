@@ -41,8 +41,12 @@
     href="https://dragoia1622-beep.github.io/BARRETT-TECNOLOGIA/views/proyectos.html"
   >
 
-  <!-- JAVASCRIPT DE PROYECTOS Y RELOJ INTERNACIONAL -->
-  <script src="../js/drago.js" defer></script>
+ <!-- JavaScript de proyectos y reloj internacional -->
+<script src="../js/drago.js" defer></script>
+
+<!-- Motor 3D del planeta Tierra -->
+<script type="module" src="../tierra-3d/tierra.js"></script>
+  
 </head>
 
 
@@ -100,10 +104,18 @@
       <div class="drago-orbita" aria-hidden="true"></div>
 
       
-<!-- Esfera corporativa BARRETT TECNOLOGÍA -->
+
+<!-- PLANETA TIERRA 3D · SISTEMA DRAGO-IA -->
 <div class="drago-esfera-contenedor" aria-hidden="true">
+
+  <!-- Sello BF original: respaldo temporal -->
   <div class="drago-esfera"></div>
+
+  <!-- Aquí se dibujará la Tierra con Three.js -->
+  <div id="drago-tierra-3d"></div>
+
 </div>
+
 
 
     
@@ -733,6 +745,13 @@
     </p>
 
   </div>
+
+   <!-- Aquí está el contenido actual de tu footer -->
+
+  <a href="#" class="barrett-volver-arriba"
+     aria-label="Volver arriba">
+    ↑
+  </a>
 
 </footer>
 
